@@ -68,6 +68,7 @@
 					<div class="menu">
 						{{ navbarItem .Path (.T "Profile") (printf "/u/%d" .Context.User.ID) }}
 						{{ navbarItem .Path (.T "Friends") "/friends" }}
+						{{ navbarItem .Path (.T "Followers") "/followers" }}
 						{{ navbarItem .Path (.T "Settings") "/settings" }}
 						{{ navbarItem .Path (.T "Log out") (printf "/logout?k=%s" (.Session.Get "logout")) }}
 					</div>
